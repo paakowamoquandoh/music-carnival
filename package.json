@@ -1,0 +1,19 @@
+{
+  "name": "music-carnival",
+  "version": "1.0.0",
+  "description": "music distribution project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paakowamoquandoh/music-carnival.git"
+  },
+  "author": "felix Amoquandoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paakowamoquandoh/music-carnival/issues"
+  },
+  "homepage": "https://github.com/paakowamoquandoh/music-carnival#readme"
+}
