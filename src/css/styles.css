@@ -18,3 +18,115 @@
     --fontSecondaryColor: #c59d5f;
     --fontColorMain: #515151;
 }
+
+.dropBtn:active, .dropBtn:hover, .dropBtn:focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+  .dropBtn::before,
+  .dropBtn::after {
+    position: absolute;
+    content: "";
+  }
+
+.dropBtn {
+    position: relative;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+  }
+    .dropBtn span {         
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+
+.dropBtn-1::before {
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+  }
+  .dropBtn-1 span {
+    color: rgb(255,255,255);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
+  .dropBtn-1 span:hover {
+    color: rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+  }
+  
+  /* 1.hover-filled-slide-down */
+  .dropBtn.hover-filled-slide-down::before {
+    bottom: 0; left: 0; right: 0; 
+    height: 100%; width: 100%;
+  }
+  .dropBtn.hover-filled-slide-down:hover::before {
+    height: 0%;
+  }
+  
+
+/* header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+ */
