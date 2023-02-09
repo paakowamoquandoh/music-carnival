@@ -44,7 +44,7 @@
       position: relative;
       display: inline-block;
       font-size: 14px;
-      font-weight: bold;
+      font-weight: bolder;
       letter-spacing: 2px;
       text-transform: uppercase;
       top: 0; left: 0;
@@ -93,6 +93,24 @@
     color: rgb(0, 0, 0);
     transition: 0.2s 0.1s;
   }
+
+  .dropBtn-21{
+    background-color: transparent;
+  }
+
+  .dropBtn-21::before {
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease-out;
+  }
+  .dropBtn-21 span {
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.2s;
+  }  
+  .dropBtn-21 span:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.2s 0.1s;
+  }
   
   /* 6. hover-slide-down */
   .dropBtn.hover-slide-down::before {
@@ -101,6 +119,15 @@
   }
   .dropBtn.hover-slide-down:hover::before {
     height: 100%;
+  }
+
+  /* 9. hover-slide-right */
+.dropBtn.hover-slide-right::before {
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+  }
+  .dropBtn.hover-slide-right:hover::before {
+    width: 100%;
   }
 
   .moonIcon{
@@ -272,7 +299,7 @@ video {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 80px;
     margin-left: -200px;
   }
 
@@ -296,15 +323,14 @@ video {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.5rem;
-    margin-right: -0.5rem;
     font-weight: bolder;
-    text-align: center;
+    text-align: start;
+    line-height: 1.5;
 }
 .divider{
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-left: 2rem;
+    justify-content: center;
 }
 
 .line{
@@ -313,7 +339,6 @@ video {
     height: 0.25rem;
     background-color: #fff;
     position: relative;
-    margin: 2rem 0rem;
 }
 
 .symbol{
@@ -323,23 +348,32 @@ video {
 }
 
 .headlineDesc p{
-    color: var(--main-color);
+    color: white;
     font-weight: bolder;
     font-size: 2.2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
+    margin-top: 1.2rem;
     letter-spacing: 3px;
     margin-right: -3px;
 }
 
 .singleAnimation h5{
-    color: gold;
+    color: var(--main-color);
     font-weight: bold;
     font-size: 1.65rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1.5px;
     margin-right: -3px;
-    background-color: rgba(128, 128, 128, 0.692);
+    background-color: rgba(1, 1, 36, 0.692);
     padding: 8px 18px;
+    margin-bottom: 1.6rem;
+    border-radius: 73% 27% 26% 74% / 44% 56% 44% 56% ;
+}
+
+.coverBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* featured */
@@ -348,11 +382,17 @@ video {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+   
 }
 
-.feature .featureBox{
-    width: 150px;
+.feature .featureBox{   
+    padding: 0rem 5rem;
     text-align: center;
+    width: 180px;
+    text-align: center;
+    padding: 0px 15px;
+    border-radius: 4px;
+    margin: 0 24px;
 }
 
 .feature .featureBox:hover{    
@@ -361,4 +401,8 @@ video {
 
 .feature .featureBox img{
    width: 100%;
+}
+
+.feature .navLink{
+    margin-top: 2rem;
 }
