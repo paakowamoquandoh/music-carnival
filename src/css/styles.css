@@ -76,17 +76,21 @@
     height: 0%;
   }
 
+  .dropBtn-2{
+    background-color: black;
+  }
+
   .dropBtn-2::before {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition: 0.3s ease-out;
   }
   .dropBtn-2 span {
-    color: rgb(255, 0, 0);
-    border: 3px solid rgb(189, 25, 3);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
     transition: 0.2s;
   }  
   .dropBtn-2 span:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.2s 0.1s;
   }
   
