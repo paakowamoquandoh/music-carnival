@@ -122,7 +122,7 @@ p{
 }
 .brandLogo img{
     height: auto;
-    width: 85px;
+    width: 65px;
     object-fit: cover;
 }
 
@@ -133,8 +133,9 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
-}
+    background-color: var(--main-color);
+    padding: 10px 0px;
+ }
 
 .navBar{
     height: 7.2rem;
@@ -227,16 +228,57 @@ header{
     text-align: start;
 }
 
-.container video{
-   padding: 15vh 0px;
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.98;
+  }
+
+  .coverContent{
+    position: relative;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 150px;
+    margin-left: -200px;
+  }
+
+.subHeading{
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-family: var(--mainFont);
+    color: white;
+    line-height: 0.4;
+    margin: 2rem 0rem;
+}
+.firstLetter{
+    text-transform: uppercase;
+    font-size: 8.3rem;
+}
+.headline{
+    color: #fff;
+    font-size: 2.7rem;
+    font-family: var(--bodyFont);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-right: -0.5rem;
+}
+.divider{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height:  22rem;
-    opacity: 0.8;    
-  }
-  
+.line{
+    max-width: 8.4rem;
+    height: 0.25rem;
+    background-color: #fff;
+    position: relative;
+}
