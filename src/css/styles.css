@@ -14,9 +14,12 @@
     --mainFont: 'Source Sans Pro', sans-serif;
     --secondaryFont: 'Herr Von Muellerhoff', cursive;
     --bodyFont: 'Cabin', sans-serif;
-    --darkFontMain: #252525;
-    --fontSecondaryColor: #c59d5f;
-    --fontColorMain: #515151;
+    --main-color: rgb(237,70,48);
+    --darkFontMain: rgb(25,25,24);
+    --fontColor: rgb(10,23,52);
+    --greyFontColor: #515151;
+    --other-blue: rgb(0,51,97);
+    --lightColor: white:
 }
 
 .dropBtn:active, .dropBtn:hover, .dropBtn:focus {
@@ -51,7 +54,7 @@
     }
 
 .dropBtn-1::before {
-    background-color: var(--fontSecondaryColor);
+    background-color: var(--fontColor);
     transition: 0.3s ease-out;
   }
   .dropBtn-1 span {
@@ -85,75 +88,155 @@
     display: block;
   }
 
-  body.light-theme{
-    --light-color: #1b1b1b;
-    --light-color-alt: rgba(253, 253, 253, 0.6);
-    --primary-background-color: #fff;
-    --secondary-background-color: #f1f1f1;
-    --hover-light-color: #fff;
-    --transparent-dark-color: var(--secondary-background-color);
-    --transparent-light-color: rgba(10, 9, 9, 0.1);
+/* body.light-theme{
+    
 }
-
 .navbar.light-theme{
-  background-color: var(--secondary-background-color);
-  --primary-background-color: rgb(12, 12, 12);
+ 
+} */
+html{
+    font-family: var(--bodyFont);
+    font-size: 10px;
+    color: var(--fontColor);
+    scroll-behavior: smooth;
 }
-  
 
-/* header
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+section{
+    padding: 3.9rem 0;
 }
-header .logo
-{
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+img{
+    width: 100%;
+    max-width: 100%;
 }
-.toggle
-{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
+a{
+    text-decoration: none;
 }
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
+p{
+    font-size: 1.6rem;
 }
-.showcase
-{
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  transition: 0.5s;
-  z-index: 2;
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 0.24rem;
 }
-.showcase.active
-{
-  right: 300px;
+.brandLogo img{
+    height: auto;
+    width: 85px;
+    object-fit: cover;
 }
- */
+
+/*  */
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+}
+
+.navBar{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuToggle{
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.menuClose{
+    display: none;
+}
+
+.navList{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--darkFontMain);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+}
+
+.navBar::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s;
+}
+
+.open .menuClose{
+    display: block;
+}
+.open .menuOpen{
+    display: none;
+}
+.open .navList{
+    transform: translateX(0);
+}
+.open .navBar::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.underline{
+    border-bottom: 2px solid rgba(255,255,255, 0.3) ;
+}
+
+.navLink{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    transition: color 0.5s;
+}
+
+/*  */
+.cover{
+    width: 100%;
+    height: 85vh;
+    border: 2px solid green;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    text-align: start;
+}
+
+.container video{
+   padding: 15vh 0px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height:  22rem;
+    opacity: 0.8;    
+  }
+  

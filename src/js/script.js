@@ -1,5 +1,5 @@
 // Switch theme/add to local storage
-const body = document.body;
+let body = document.body;
 const themeToggleBtn = body.querySelector('#theme-change-button');
 const currentTheme = localStorage.getItem('currentTheme');
 
@@ -19,3 +19,16 @@ themeToggleBtn.addEventListener('click', function () {
         localStorage.removeItem('currentTheme');
     }
 });
+
+
+// menu open and close
+const selectedElement = function(element){
+    return document.querySelector(element);
+};
+
+let menuToggler = selectedElement(".menuToggle");
+let navbody = selectedElement("body");
+
+menuToggler.addEventListener("click", function(){
+    navbody.classList.toggle("open")
+})
