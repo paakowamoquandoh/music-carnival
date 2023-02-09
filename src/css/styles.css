@@ -283,6 +283,7 @@ video {
     color: white;
     line-height: 1;
     margin: 2rem 0rem;
+    
 }
 .firstLetter{
     text-transform: uppercase;
@@ -297,11 +298,13 @@ video {
     letter-spacing: 0.5rem;
     margin-right: -0.5rem;
     font-weight: bolder;
+    text-align: center;
 }
 .divider{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: start;
+    margin-left: 2rem;
 }
 
 .line{
@@ -337,4 +340,25 @@ video {
     margin-right: -3px;
     background-color: rgba(128, 128, 128, 0.692);
     padding: 8px 18px;
+}
+
+/* featured */
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feature .featureBox{
+    width: 150px;
+    text-align: center;
+}
+
+.feature .featureBox:hover{    
+    box-shadow: 5px 5px 54px rgba(132, 130, 121, 0.591);    
+}
+
+.feature .featureBox img{
+   width: 100%;
 }
