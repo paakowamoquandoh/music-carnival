@@ -262,7 +262,7 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.98;
+   
   }
 
   .coverContent{
@@ -272,14 +272,14 @@ video {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 50px;
     margin-left: -200px;
   }
 
 .subHeading{
     font-size: 5.5rem;
     font-weight: bolder;
-    font-family: var(--bodyFont);
+    font-family: var(--mainFont);
     color: white;
     line-height: 1;
     margin: 2rem 0rem;
@@ -291,7 +291,7 @@ video {
 .headline{
     color: #fff;
     font-size: 2.7rem;
-    font-family: var(--mainFont);
+    font-family: var(--bodyFont);
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.5rem;
