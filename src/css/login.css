@@ -2,8 +2,8 @@
 	/* COLORS */
 	--white: #e9e9e9;
 	--gray: #333;
-	--blue: rgb(237,70,48);
-	--lightblue: rgb(0,51,97);
+	--blue: rgb(0,51,97);
+	--lightblue: rgb(237,70,48);
 
 	/* RADII */
 	--button-radius: 0.7rem;
@@ -28,6 +28,29 @@ body {
 	display: grid;
 	height: 100vh;
 	place-items: center;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--other-blue);
+    padding: 10px 0px;
+ }
+
+ .brandLogo img{
+    height: auto;
+    width: 65px;
+    object-fit: cover;
+}
+
+.navBar{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form__title {

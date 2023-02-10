@@ -19,7 +19,8 @@
     --fontColor: rgb(10,23,52);
     --greyFontColor: #515151;
     --other-blue: rgb(0,51,97);
-    --lightColor: white:
+    --lightColor: white;
+    --transparentColor: rgba(0, 131, 245, 0.39);
 }
 
 .dropBtn:active, .dropBtn:hover, .dropBtn:focus {
@@ -187,7 +188,7 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: var(--other-blue);
+    background-color: var(--transparentColor);
     padding: 10px 0px;
  }
 
@@ -406,4 +407,56 @@ video {
 
 .feature .navLink{
     margin-top: 2rem;
+}
+
+/*  */
+.globalHeadline{
+  text-align: center;
+  margin-top: 3.9rem;
+}
+
+.discover .globalHeadline{
+  margin-top: 6.9rem;
+}
+
+.globalHeadline .symbol{
+  color: var(--fontColor);
+  margin: 2.4rem 0;
+}
+
+.headlineDark{
+  color: var(--darkFontMain);
+  letter-spacing: 0.7rem;
+  margin-right: -0.7rem;
+  text-align: center;
+}
+
+.globalHeadline .subHeadline{
+  letter-spacing: -1px;
+  line-height: 0.42;
+}
+
+.distInfo{
+  text-align: center;
+}
+
+.distDesc{
+  margin-bottom: 3rem;
+}
+
+.distDesc p{
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.bodyBtn{
+  font-size: 1.5rem;
+  color: var(--other-blue);
+  position: relative;
+  transition: color 0.5s;
+}
+
+.bodyBtn::before{
+  content: "";
+  position: absolute;
 }
