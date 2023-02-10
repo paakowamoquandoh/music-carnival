@@ -459,4 +459,43 @@ video {
 .bodyBtn::before{
   content: "";
   position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--other-blue);
+  transition: background-color 0.5s;
+}
+
+.bodyBtn:hover, .bodyBtn:focus{
+  color: var(--darkFontMain);
+}
+
+.bodyBtn:hover::before,
+.bodyBtn:focus::before{
+  background-color: var(--darkFontMain);
+}
+
+/*  */
+.services{
+  background: url("../media/musicCover1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.middle{
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+/*  */
+.imageGroup{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1.5rem;
+}
+
+.moreServices .distDesc{
+  padding-top: 3rem;
+  margin-bottom: 0;
 }
