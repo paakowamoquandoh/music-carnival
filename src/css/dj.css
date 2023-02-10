@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
+
+
+:root{
+  --text-color: #fff;
+  --main-color: coral;
+  --hover-color:  rgb(184, 159, 19);
+  --light-color-alt: #2a2a2e;
+  --blue-background: #2369BD;
+  --primary-background-color: #0e0d0d;
+  --secondary-background-color: #3a3333;
+  --gradient-color: linear-gradient(
+      115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  --transparent-light-color: rgba(2, 1, 1, 0.05);
+  --transparent-dark-color: rgba(0,0,0,.75);
+  --font-family: 'Poppins', sans-serif;
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
+}
+
+                               /* Base styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body{
+  font-family: Poppins, sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-background-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+html::-webkit-scrollbar{
+  width: 0.5rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+}
+
+::selection{
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    z-index: 100;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.brandLogo{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-right: auto;
+}
+.brandLogo span{
+    color: coral;
+}
+.searchArea{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background-color: var(--secondary-background-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+
+.searchArea .bi-search{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.searchArea .bi-search:hover{
+    color: coral;
+    cursor: pointer;
+}
+
+#searchInput{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  background: transparent;
+  font-size: 0.938rem;
+}
+
+.profile{
+    display: flex;
+}
+.userImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sideBar{
+    position: fixed;
+    top: 40%;
+    transform: translateY(-60%);
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+    background-color: var();
+}
+
+.navLink{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b7b7b7;
+    margin-top: -24px;
+}
+
+.navLink:hover{
+    color: coral;
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+.active{
+    color: coral;
+    transition: 0.3s all linear;
+    transform: scale(1.2);
+    padding-left: 10px;
+}
+
+.navLink .bi{
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+.navLinkTitle{
+    font-size: 1rem;
+}
+
+.home{
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 9.5rem;
+    border-radius: 0.5rem;
+}
+
+.homeImage{
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.homeText{
+    padding-left: 40px;
+}
+
+.homeTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.homeText p{
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    color: coral;
+}
+
+.playPreview{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.playPreview .bi{
+    font-size: 21px;
+    background: coral;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playPreview .bi:hover{
+    background: var(--hover-color);
+}
+
+.playPreview span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light-color-alt);
+    padding: 8px 14px;
+    border: 1px solid hsl(200, 100%, 99% / 5%);
+    margin-top: 50px;
+    margin-bottom: 3rem;
+}
+
+.headingTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.newMusicBox {
+   position: relative;
+   width: 100%;
+   height: 380px;
+   overflow: hidden;
+  }
+
+  .newMusicBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .newMusicBox .newMusicText{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    overflow: hidden;
+    background: linear-gradient(8deg, hsla(240, 17%, 14%, 0.308) 14%,
+    hsla(240, 17%, 14%, 0.671) 44%);
+  }
+
+  .musicTitle{
+    font-size: 1.28rem;
+    font-weight: 600;
+  }
+
+  .genre{
+   font-size: 0.9rem; 
+   font-weight: 400;
+   margin-bottom: 0.5rem;
+  }
+
+  .swipeButtons{
+    display: flex;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    position: static !important;
+    margin: 0 0 0 10px !important;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+
+  /* .playSong{
+    position: absolute;
+    top: 0.8rem;
+    ri: 0.8rem;
+  } */
+
+  .popularMusic .heading{
+     padding: 10px 14px;
+  }
+
+  .musicContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .musicContent .newMusicBox:hover .newMusicBoxImg{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .nextPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .nextButton{
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
+  .nextButton:hover{
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+  }
+
+  .copyright{
+    display: flex;
+    margin-top: 14rem;
+  }
+
+  .foot{
+    margin-top: 3rem;
+    margin-bottom: auto;
+    position: static;
+  }
+
+  .playContainer{
+    position: relative;
+    min-height: 540px;
+    margin-top: 5rem !important;
+  }
+
+  .playImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  .playText{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    background: linear-gradient(8deg, hsla(240, 17%, 14%, 0.308) 14%,
+    hsla(240, 17%, 14%, 0.671) 44%);
+  }
+  
+  .playText h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .rating{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-top: 4px;
+  }
+
+  .tags{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin: 1rem 0;
+  }
+
+  .tags span{
+    background-color: var(--light-color-alt);
+    padding: 0 4px;
+  }
+  .playTrack{
+    position: absolute;
+    bottom: 18rem;
+    right: 10rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--main-color);
+    font-size: 58px;
+    animation: animate 2s linear infinite;
+  }
+  @keyframes animate{
+    0%{
+        box-shadow: 0 0 0 0 rgb(255, 180, 58, 0.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 rgb(255, 193, 7, 0);
+    }
+  }
+
+  /*  */
+.videoContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    background: hsl(234, 10%, 20% / 60%);
+    z-index: 400;
+}
+
+.videoContainer.show{
+  display: flex;
+}
+
+.videoBox{
+    position: relative;
+    width: 68%;
+}
+
+.videoBox #demoMusic{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.closeDemo{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    font-size: 25px;
+    color: #fad648;
+    margin-right: 20px;
+    font-weight: 800;
+}
+
+.musicDescription{
+  margin-top: 2rem !important;
+}
+
+.musicDescription h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.musicDescription p{
+  max-width: 600px;
+  font-size: 0.938rem;
+  margin: 10px 0;  
+}
+
+.descHeading{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.artist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+  gap: 1rem;
+}
+
+.artistImage{
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.download{
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.downloadTitle{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.6rem 0;
+  color: var(--main-color);
+}
+
+.downloadLinks{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.downloadLinks a{
+  text-align: center;
+  background: var(--main-color);
+  padding: 12px 24px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.downloadLinks a:hover{
+  background: var(--hover-color);
+}
+
+
+/* responsive media queries */
+@media (max-width: 1170px) {
+  
+  .videoBox{
+    width: 85%;
+}
+
+  .videoContainer{    
+    height: 100%;   
+}
+  
+  .foot{
+    margin-bottom: 5.72rem;
+  }
+  .sideBar{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    transform: translateY(0);
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 1px;
+    padding: 10px;
+    border-top: 1px solid hsl(200 100% 99% / 5%);
+    background: linear-gradient(8deg, hsl(240 17% 14% / 100%) 5%, hsl(240 17% 14% / 90%) 100%);
+  }
+
+  .navLink{
+    margin-left: 0px;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.navLink .bi{
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+}
+
+@media (max-width: 1060px){
+   .container{
+    margin:  0 auto;
+    width: 95%;
+   }
+}
+
+@media (max-width: 991px){
+  .newMusicBox{
+    height: 340px;
+  }
+
+  .musicContent{
+    grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+  }
+}
+
+
+@media (max-width: 888px){
+  .navBar{
+    padding: 14px 0;
+  }
+  .home{
+    min-height: 440px;
+    margin-top:4rem !important;
+  }
+  .homeText{
+    padding-left: 25px;
+  }
+  .homeTitle{
+    font-size: 1.6rem;
+  }
+  .playPreview span{
+    font-size: 0.9rem;
+  }
+  .musicTitle{
+    font-size: 1rem;
+    padding-right: 30px;
+  }
+  .playContainer{
+    min-height: 440px;
+    margin-top: 4rem !important;
+  }
+  .playTrack{
+    bottom: 14rem;
+    right: 4rem;
+  }
+  .artistBox{
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px){
+  #playListen .bi{
+    display: none;
+  }
+  .navLinkTitle {
+    font-size: 0.7rem;
+   }
+   .navBar{
+    padding: 11px 0;
+   }
+   .logo{
+    font-size: 1.2rem;
+   }
+   section{
+    padding: 2rem 0;
+   }
+   .homeImage{
+    object-position: left;
+   }
+   .tags span, .musicDescription p{
+    font-size: 0.875rem;
+   }
+   p{
+    font-size: 0.875rem;
+   }
+   .playText h2, .musicDescription h2{
+    font-size: 1.3rem;
+   }
+   .playText{
+    bottom: 10rem;
+    right: 2rem;
+   }
+}
+
+@media (max-width: 514px){
+  .home{
+    min-height: 380px;
+  }
+  .heading{
+    padding: 2px 14px;
+  }
+  .headingTitle{
+    font-size: 1rem;
+  }
+  .playText{
+     padding: 20px;
+  }
+  .playTrack{
+    bottom: 0.5rem;
+  }
+  .videoBox{
+    width: 94%;
+  }
+  .descHeading{
+    font-size: 1.1rem;
+  }
+  .descTitle{
+    font-size: 0.9rem;
+  }
+  .artist{
+    margin-left: auto;
+    margin-right: auto;
+   }
+}
+
+@media (max-width: 408px){
+  *{
+    scroll-padding-top: 5rem;
+  }
+  .navBar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+  }
+  .searchArea{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 4px;
+    order: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .newMusicBox{
+    height: 300px;
+  }
+  .navLinkTitle {
+   font-size: 0.5rem;
+  }
+
+  .foot{
+    margin-bottom: 3rem;
+  }
+  .musicContent{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .downloadLinks{
+    grid-template-columns: 1fr;
+   }
+  
+}
+
+@media (max-width: 370px){
+   .home{
+    min-height: 300px;
+   }
+
+   .newMusicBox{
+    height: 285px;
+   }
+
+   .userImage, .playPreview .bi{
+    width: 35px;
+    height: 35px;
+   }
+   .sideBar{
+    justify-content: space-around;
+    padding: 8px 0;
+   }
+   .navLink .bi{
+     font-size: 1.4rem;
+   }
+
+   .musicDescription p{
+    text-align: justify;
+   }
+  
+}
+
