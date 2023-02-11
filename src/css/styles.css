@@ -20,7 +20,7 @@
     --greyFontColor: #515151;
     --other-blue: rgb(0,51,97);
     --lightColor: white;
-    --transparentColor: rgba(0, 131, 245, 0.39);
+    --transparentColor: rgba(0, 131, 245, 0.164);
 }
 
 .dropBtn:active, .dropBtn:hover, .dropBtn:focus {
@@ -54,6 +54,10 @@
       transition: 0.3s;
     }
 
+.dropBtn-1{
+  background-color: #fff;
+}
+
 .dropBtn-1::before {
     background-color: var(--fontColor);
     transition: 0.3s ease-out;
@@ -64,7 +68,7 @@
     transition: 0.2s 0.1s;
   }
   .dropBtn-1 span:hover {
-    color: rgb(28, 31, 30);
+    color: rgb(0, 0, 0);
     transition: 0.2s 0.1s;
   }
   
@@ -295,13 +299,13 @@ video {
 
   .coverContent{
     position: relative;
-    text-align: start;
+    
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 80px;
-    margin-left: -200px;
+  
   }
 
 .subHeading{
@@ -384,17 +388,17 @@ video {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-   
+    padding: 0px 45px;   
 }
 
 .feature .featureBox{   
     padding: 0rem 5rem;
     text-align: center;
-    width: 180px;
+    width: 160px;
     text-align: center;
     padding: 0px 15px;
     border-radius: 4px;
-    margin: 0 24px;
+    margin: 10px 24px;
 }
 
 .feature .featureBox:hover{    
@@ -409,7 +413,17 @@ video {
     margin-top: 2rem;
 }
 
+.featureSection .navLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*  */
+.centreText{
+  text-align: center;
+}
+
 .globalHeadline{
   text-align: center;
   margin-top: 3.9rem;
@@ -434,6 +448,11 @@ video {
 .globalHeadline .subHeadline{
   letter-spacing: -1px;
   line-height: 0.42;
+
+}
+
+.globalHeadline .subHeadline b{
+  font-size: xx-large;
 }
 
 .distInfo{
@@ -478,7 +497,7 @@ video {
 
 /*  */
 .services{
-  background: url("../media/musicCover1.jpg") center no-repeat;
+  background: url("../media/musicCover2.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -487,6 +506,11 @@ video {
   display: flex;
   align-items: center;
 }
+
+.services .animateTop .subHeadline{
+  color: var(--main-color);
+}
+
 
 /*  */
 .imageGroup{
@@ -498,4 +522,14 @@ video {
 .moreServices .distDesc{
   padding-top: 3rem;
   margin-bottom: 0;
+}
+
+/*  */
+.toolsBlend{
+  background: url("../media/musicCover.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.toolsBlend .animateBottom .centreText{
+  color: var(--main-color);
 }
