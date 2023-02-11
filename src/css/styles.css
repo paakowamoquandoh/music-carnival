@@ -722,6 +722,19 @@ footer img{
     flex: 1;
   }
 
+  .paddingRight{
+    padding-right: 7rem;
+  }
+
+  .footerContent{
+    max-width: 77.5rem;
+    margin: auto;
+  }
+
+  .aboutFooter{
+    max-width: 51.3rem;
+    margin: 0 auto 5.4rem;
+  }
 
 }
 
