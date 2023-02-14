@@ -101,7 +101,7 @@ header{
 }
 
 .container--signin {
-	left: 0;
+	left: 10;
 	width: 50%;
 	z-index: 2;
 }
@@ -222,9 +222,9 @@ header{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 3rem;
+	padding: 0 2.6rem;
 	height: 100%;
-	text-align: center;
+	text-align: start;
 }
 
 .input {
@@ -232,6 +232,10 @@ header{
 	border: none;
 	padding: 0.9rem 0.9rem;
 	margin: 0.5rem 0;
+	width: 100%;
+}
+
+.formInput{
 	width: 100%;
 }
 
@@ -247,4 +251,10 @@ header{
 		opacity: 1;
 		z-index: 5;
 	}
+}
+
+.errorMsg{
+    color: red;
+    font-size: 0.9rem;
+	text-align: start;
 }
