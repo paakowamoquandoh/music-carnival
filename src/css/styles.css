@@ -741,3 +741,14 @@ footer img{
 }
 
 
+@media (max-width: 830px){
+
+.feature{
+   justify-content: space-between;
+}
+
+.feature .featureBox{
+   margin: 0 0 15px 0;  
+   width: 155px;       
+ }
+}
