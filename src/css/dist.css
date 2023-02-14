@@ -110,7 +110,14 @@
  .app-header-right button {
 	 margin-left: 10px;
 }
- .app-icon {
+
+.brandLogo img{
+    height: auto;
+    width: 50px;
+    object-fit: cover;
+}
+
+ /* .app-icon {
 	 width: 26px;
 	 height: 2px;
 	 border-radius: 4px;
@@ -132,7 +139,7 @@
 }
  .app-icon:after {
 	 bottom: -6px;
-}
+} */
  .app-name {
 	 color: var(--main-color);
 	 margin: 0;
