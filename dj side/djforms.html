@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/media/music-notes.png"
+    />
+    <title>DropSongx</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/css/djforms.css" />
+  </head>
+  <body>
+    <header>
+        <div class="navBar">
+          <div class="menuToggle">
+            <ion-icon class="menuOpen" name="grid-outline"></ion-icon>
+            <ion-icon class="menuClose" name="close-outline"></ion-icon>
+          </div>
+          <a href="../index.html" class="brandLogo">
+            <img src="../src/media/music-notes.png" alt="">
+          </a>
+          </div>
+    </header>
+    <div class="container">
+      <form id="survey-form" action="">
+        <p id="description" class="form-header">
+           <i><b>Hello Mr DJ,</b></i> Please fill out the spaces <b>Thank you</b>
+          </p>
+        <div class="form-group">
+          <label id="name-label" for="name"> Stage Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Years of Experience</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Prefered Song Genre</label>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="medication">Hip Hop</option>
+            <option value="food">Funk</option>
+            <option value="plant">Afro pop</option>
+            <option value="bites">Gospel</option>
+            <option value="other">Hi Life</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>Are you a radio DJ?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="yes"
+              type="radio"
+              class="radio-input"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="radio-input"
+            />No</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="radio-input"
+            />Not sure</label
+          >
+        </div>
+    
+        <div class="form-group">
+          <p>
+            Have you ever been played for any of the following:
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Asthma</option>
+            <option value="projects">Diabetes</option>
+            <option value="community">Hypertension (high blood pressure)</option>
+            <option value="openSource">Heart disease</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            Which activity have you been approved participation in:
+            <span class="option">(Check all that apply)</span>
+          </p>
+    
+          <label
+            ><input
+              name="approved"
+              value="hiking and camping"
+              type="checkbox"
+              class="checkbox-input"
+            />Hiking and camping</label
+          >
+          <label>
+            <input 
+              name="approved"
+              value="horseback riding"
+              type="checkbox"
+              class="checkbox-input"
+            />Horseback riding</label
+          >
+          <label
+            ><input
+              name="approved"
+              value="swimming/water activities"
+              type="checkbox"
+              class="checkbox-input"
+            />Swimming/water activities</label
+          >
+              
+    
+        <div style="margin-top: 1.4rem;" class="forms">
+          <button type="submit" id="submit" class="submit-button" onclick="window.location.href='../dj side/dj.html'">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

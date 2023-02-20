@@ -298,7 +298,6 @@ header{
 .cover{
     width: 100%;
     height: 85vh;
-    border: 2px solid green;
     background-size: cover;
     display: flex;
     align-items: start;
@@ -405,21 +404,21 @@ video {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-      
+    margin-bottom: 1.8rem;      
 }
 
 .feature .featureBox{   
-    padding: 0rem 5rem;
     text-align: center;
     width: 160px;
     text-align: center;
     padding: 0px 15px;
     border-radius: 4px;
     margin: 10px 24px;
+    background-color: var(--transparentColor);
 }
 
 .feature .featureBox:hover{    
-    box-shadow: 5px 5px 54px rgba(132, 130, 121, 0.591);    
+    box-shadow: 5px 5px 54px rgba(148, 55, 75, 0.884);    
 }
 
 .feature .featureBox img{
@@ -674,7 +673,7 @@ footer img{
 }
 .menu {
   margin-bottom: 5rem;
-  height: 65vh;
+  height: 70vh;
   padding: 2rem 0 3rem;
   opacity: none;
 }
@@ -853,6 +852,25 @@ footer img{
   border-bottom: dotted 3px var(--gold-color);
 }
 
+/* publishing styles */
+.publishContainer::before{
+  background-image: linear-gradient(
+    98deg,
+    rgba(54, 90, 250, 0.486),
+    rgba(178, 235, 245, 0.384)
+  ), url('../media/pexels-brett-sayles-2479312.jpg');
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
 
 
 
@@ -964,8 +982,7 @@ footer img{
 
 
 @media (max-width: 830px){
-
-  .pricing-plan {
+   .pricing-plan {
     margin: 2rem 0rem;
   }
 
