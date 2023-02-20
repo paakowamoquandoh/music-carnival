@@ -891,6 +891,18 @@ footer img{
     object-fit: cover;
 }
 
+.sellContainer .coverContent .navBar .navList .navItem .navLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sellContainer .coverContent .navBar .navList .navItem .navLink:hover{
+  transform: scale(1.1);
+}
+.sellContainer .coverContent .navBar .navList .navItem .navLink ion-icon{
+  margin-right: 5px;
+}
+
 
 
 
