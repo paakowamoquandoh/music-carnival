@@ -872,6 +872,25 @@ footer img{
     object-fit: cover;
 }
 
+.sellContainer::before{
+  background-image: linear-gradient(
+    98deg,
+    rgba(250, 198, 54, 0.486),
+    rgba(245, 203, 178, 0.384)
+  ), url('../media/sellcover.jpg');
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
 
 
 
