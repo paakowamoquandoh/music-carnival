@@ -19,7 +19,7 @@
 html {
     box-sizing: border-box;
     font-family: var(--mainFont);
-    background: url("../media/djCover1.jpg");
+    background-color: var(--other-blue);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,7 +31,8 @@ html {
   }
   
   .background {
-    padding: 0 25px 25px;
+    /* padding: 0 25px 25px; */
+    
     position: relative;
     width: 100%;
     margin-top: 6rem;
@@ -39,7 +40,7 @@ html {
   
   .background::after {
     content: '';
-    background: #515253;
+    /* background: var(--other-blue); */
     height: 350px;
     left: 0;
     position: absolute;
@@ -79,26 +80,26 @@ header{
     justify-content: center;
 }
   
-  .container {
+  .payContainer {
     margin: 0 auto;
     padding: 50px 0 0;
-    max-width: 960px;
+    max-width: 1200px;
     width: 100%;
   }
   
   .panel {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 15px 25px;
     position: relative;
     width: 100%;
     z-index: 10;
   }
   
   .pricing-table {
-    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
   
   @media (min-width: 900px) {
@@ -113,8 +114,11 @@ header{
   }
   
   .pricing-plan {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
     border-bottom: 1px solid #e1f1ff;
     padding: 25px;
+    background-color: white;
+    margin: 0rem 2rem;
   }
   
   .pricing-plan:last-child {

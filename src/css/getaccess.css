@@ -2,6 +2,7 @@
     --background-dark: #2d3548;
     --text-light: rgba(255,255,255,0.6);
     --text-lighter: rgba(255,255,255,0.9);
+    --other-blue: rgb(0,51,97);
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
@@ -26,8 +27,7 @@
   body{
     height: 100%;
     max-height: 100vh;
-    background-color: var(--white);
-	background: url("../media/djCover1.jpg");
+    background-color: var(--other-blue);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

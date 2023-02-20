@@ -186,6 +186,12 @@ p{
     margin-left: 2rem;
 }
 
+.d-grid{
+  display: grid;
+}
+ body{
+  background-color: var(--other-blue);
+ }
 /*  */
 header{
     width: 100%;
@@ -193,7 +199,7 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: var(--transparentColor);
+    background-color: var(--other-blue);
     padding: 10px 0px;
  }
 
@@ -647,6 +653,222 @@ footer img{
 }
 
 
+/* pricing page */
+.menuContainer::before{
+  background-image: linear-gradient(
+    98deg,
+    rgba(181, 192, 243, 0.185),
+    rgba(178, 235, 245, 0.13)
+  ), url('../media/djCover.jpg');
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.menu {
+  margin-bottom: 5rem;
+  height: 65vh;
+  padding: 2rem 0 3rem;
+  opacity: none;
+}
+
+
+/* pricing Table */
+.background {
+  /* padding: 0 25px 25px; */
+  background-color: var(--other-blue);
+  position: relative;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.background::after {
+  content: '';
+  /* background: var(--other-blue); */
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+
+.brandLogo img{
+  height: auto;
+  width: 65px;
+  object-fit: cover;
+  margin-left: 2rem;
+}
+
+/*  */
+.payContainer {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.panel {
+  background-color: transparent;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+  background-color: white;
+  margin: 0rem 2rem;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: var(--other-blue);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: var(--fontColor);
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: var(--other-blue);
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+
+#info{
+  padding: 0 100px;
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   color: var(--light-color);
+   font-size: var(--font-size-md);
+}
+
+.textLink{
+  font-weight: bolder;
+  border-bottom: dotted 3px var(--gold-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  */
 @media screen and (min-width: 900px){
   section{
@@ -743,6 +965,10 @@ footer img{
 
 @media (max-width: 830px){
 
+  .pricing-plan {
+    margin: 2rem 0rem;
+  }
+
 .feature{
    justify-content: space-between;
 }
@@ -751,4 +977,16 @@ footer img{
    margin: 0 0 15px 0;  
    width: 155px;       
  }
+
+ .navList{
+  position: absolute;  
+}
+
+.background::after {
+
+  position: relative;
+ 
+}
+
+
 }
