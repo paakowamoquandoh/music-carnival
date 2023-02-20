@@ -1018,7 +1018,7 @@ footer img{
   }
 
 .feature{
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 .feature .featureBox{
