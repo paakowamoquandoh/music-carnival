@@ -17,7 +17,7 @@
 			font-family: var(--mainFont);
 		}
 
- :root {
+	.dark:root {
     --mainFont: 'Source Sans Pro', sans-serif;
     --secondaryFont: 'Herr Von Muellerhoff', cursive;
     --bodyFont: 'Cabin', sans-serif;
@@ -39,9 +39,10 @@
 	 --star: #1ff1c2 e;
 	 --message-btn: #fff;
 }
- .dark:root {
-	 --app-container: #1f1d2b;
-	 --app-container: #111827;
+ :root {
+	--other-blue: rgb(0,51,97);
+	 
+	 --app-container: rgb(0,51,97);
 	 --main-color: #fff;
 	 --secondary-color: rgba(255, 255, 255, .8);
 	 --projects-section: #1f2937;
