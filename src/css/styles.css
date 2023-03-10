@@ -190,7 +190,7 @@ p{
   display: grid;
 }
  body{
-  background-color: var(--other-blue);
+  background-color: var(--light-color);
  }
 /*  */
 header{
