@@ -334,7 +334,8 @@ video {
     margin-top: 1rem; 
     opacity: 0;
     animation: fadeUp 0.5s forwards;   
-    animation-delay: 1s;
+    animation-delay: 2s;
+    animation-duration: 1s;
 }
 .firstLetter{
     text-transform: uppercase;
@@ -351,6 +352,8 @@ video {
     font-weight: bolder;
     text-align: center;
     line-height: 1.5;
+    animation: scale 1s forwards;
+    animation-delay: 1s;
 }
 .divider{
     display: flex;
@@ -664,6 +667,17 @@ footer img{
     transform: translateY(0);
   }
 }
+
+@keyframes scale{
+  0%{
+    transform: scale(2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* animation end */ 
 
 
 /* pricing page */
