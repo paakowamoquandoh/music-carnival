@@ -509,6 +509,10 @@ video {
 .globalHeadline .subHeadline{
   letter-spacing: -1px;
   line-height: 0.42;
+  opacity: 0;
+    animation: fadeUp 0.5s forwards;   
+    animation-delay: 2s;
+    animation-duration: 1s;
 
 }
 
