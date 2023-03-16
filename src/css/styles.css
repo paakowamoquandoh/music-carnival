@@ -326,12 +326,15 @@ video {
   }
 
 .subHeading{
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bolder;
     font-family: var(--mainFont);
     color: var(--other-blue);
     line-height: 1;
-    margin-top: 1rem;    
+    margin-top: 1rem; 
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;   
+    animation-delay: 1s;
 }
 .firstLetter{
     text-transform: uppercase;
@@ -658,7 +661,7 @@ footer img{
   }
   100%{
     opacity: 1;
-    transform: translateY(4rem);
+    transform: translateY(0);
   }
 }
 
