@@ -371,6 +371,9 @@ video {
     height: 0.25rem;
     background-color: #fff;
     position: relative;
+    animation: grow 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
 }
 
 .lineLeft::before,
@@ -380,6 +383,19 @@ video {
   top: 50%;
   transform: translateY(-50%);
   border: 0.6rem solid transparent;
+  animation: grow 2.2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+}
+
+.lineLeft::before{
+ border-left-color: #fff;
+ left: 0;
+}
+
+.lineRight::before{
+  border-right-color: #fff;
+  right: 0;
 }
 
 .symbol{
