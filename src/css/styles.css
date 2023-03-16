@@ -398,10 +398,19 @@ video {
   right: 0;
 }
 
+.singleAnimation{
+  opacity: 0;
+  animation: fadeDown 0.5s forwards;
+  animation-delay: 4s;
+}
+
 .symbol{
-    font-size: 28px;
+    font-size: 2.5rem;
     color: gold;
     margin: 0 1.6rem;
+    opacity: 0;
+    animation: spin 1s forwards;
+    animation-delay: 1.5s;
 }
 
 .headlineDesc p{
@@ -616,6 +625,7 @@ footer img{
   color: white;
   font-size: 34px;
   padding: 1rem 1.8rem;
+  animation: up 2s infinite;
 }
 
 .footerContent{
@@ -697,6 +707,16 @@ footer img{
   }
 }
 
+@keyframes fadeDown{
+  0%{
+    transform: translateY(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes scale{
   0%{
     transform: scale(2);
@@ -714,6 +734,29 @@ footer img{
   100%{
     opacity: 1;
     width: 100%;
+  }
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes up{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-1rem);
   }
 }
 /* animation end */ 
