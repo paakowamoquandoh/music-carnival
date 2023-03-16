@@ -433,7 +433,7 @@ video {
     padding: 0px 15px;
     border-radius: 4px;
     margin: 10px 24px;
-    background-color: var(--transparentColor);
+    
 }
 
 .feature .featureBox:hover{    
