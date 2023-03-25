@@ -64,9 +64,9 @@
 	<div class="content__inner">
 	  <div class="formContainer">
 		<!--content title-->
-		<h2 class="content__title content__title--m-sm">Pick animation type</h2>
+		<!-- <h2 class="content__title content__title--m-sm">Pick animation type</h2> -->
 		<!--animations form-->
-		<form class="pick-animation my-4">
+		<!-- <form class="pick-animation my-4">
 		  <div class="form-row">
 			<div class="col-5 m-auto">
 			  <select class="pick-animation__select form-control">
@@ -78,9 +78,9 @@
 			  </select>
 			</div>
 		  </div>
-		</form>
+		</form> -->
 		<!--content title-->
-		<h2 class="content__title">Click on steps or 'Prev' and 'Next' buttons</h2>
+		<!-- <h2 class="content__title">Click on steps or 'Prev' and 'Next' buttons</h2> -->
 	  </div>
 	  <div class="formContainer overflow-hidden">
 		<!--multisteps-form-->
@@ -106,29 +106,38 @@
 				  <div class="multisteps-form__content">
 					<div class="form-row mt-4">
 					  <div class="col-12 col-sm-6">
-						<input class="multisteps-form__input form-control" type="text" placeholder="First Name"/>
+						<label for="">Title of Album, Ep or single</label>
+						<input class="multisteps-form__input form-control" type="text" placeholder="Title here"/>
+					  </div>
+
+					  <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+						<label for="">Copyright Holder</label>
+						<input class="multisteps-form__input form-control" type="text" placeholder="Name"/>
+					  </div>
+					</div>
+
+					<div class="form-row mt-4">
+					  <div class="col-12 col-sm-6">
+						<label for="">Production Holder</label>
+						<input class="multisteps-form__input form-control" type="text" placeholder="Name"/>
 					  </div>
 					  <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-						<input class="multisteps-form__input form-control" type="text" placeholder="Last Name"/>
+						<label for="">Record Label</label>
+						<input class="multisteps-form__input form-control" type="email" placeholder="label"/>
 					  </div>
 					</div>
 					<div class="form-row mt-4">
 					  <div class="col-12 col-sm-6">
-						<input class="multisteps-form__input form-control" type="text" placeholder="Login"/>
+						<label for="">Copyright Year</label>
+						<input class="multisteps-form__input form-control" type="date" placeholder="Password"/>
 					  </div>
 					  <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-						<input class="multisteps-form__input form-control" type="email" placeholder="Email"/>
-					  </div>
-					</div>
-					<div class="form-row mt-4">
-					  <div class="col-12 col-sm-6">
-						<input class="multisteps-form__input form-control" type="password" placeholder="Password"/>
-					  </div>
-					  <div class="col-12 col-sm-6 mt-4 mt-sm-0">
-						<input class="multisteps-form__input form-control" type="password" placeholder="Repeat Password"/>
+						<label for="">Production Year</label>
+						<input class="multisteps-form__input form-control" type="date" placeholder="Repeat Password"/>
 					  </div>
 					</div>
 					<div class="button-row d-flex mt-4">
+						<label for="">Release Atists</label>
 					  <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
 					</div>
 				  </div>
