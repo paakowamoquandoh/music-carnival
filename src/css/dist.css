@@ -69,6 +69,12 @@ header{
 .d-grid{
 display: grid;
 }
+
+.navbar{
+  background-color: var(--other-blue);
+}
+
+
 .content {
   width: 95%;
   margin: 100px 0px;
