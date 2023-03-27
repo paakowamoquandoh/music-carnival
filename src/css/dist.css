@@ -27,7 +27,7 @@ html{
     font-family: var(--bodyFont);
     color: var(--fontColor);
     scroll-behavior: smooth;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 body{
