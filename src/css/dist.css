@@ -74,6 +74,11 @@ display: grid;
   background-color: var(--other-blue);
 }
 
+.nav{
+  background-color: var(--transparentColor);
+  padding: 1rem;
+}
+
 
 .content {
   width: 95%;
