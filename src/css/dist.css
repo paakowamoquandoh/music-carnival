@@ -27,7 +27,7 @@ html{
     font-family: var(--bodyFont);
     color: var(--fontColor);
     scroll-behavior: smooth;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 body{
@@ -47,8 +47,11 @@ p{
 }
 .content {
   width: 95%;
-  margin: 100px 0px
+  margin: 100px 0px;
+  font-size: x-larger;
+  height: auto;
 }
+
 .content__title {
   margin-bottom: 40px;
   font-size: 20px;

@@ -158,6 +158,7 @@ html{
     font-size: 10px;
     color: var(--fontColor);
     scroll-behavior: smooth;
+    font-size: 10px;
 }
 
 body{
