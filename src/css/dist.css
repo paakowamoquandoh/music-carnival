@@ -31,7 +31,7 @@ html{
 }
 
 .innerSection{
-  margin: 3rem 0.1rem;
+  margin: 6rem 0.1rem;
 }
 
 body{
@@ -217,6 +217,11 @@ font-size: 26px;
   background-color: var(--transparentColor);
   border: 1px solid var(--transparentColor);
 }
+
+.formUserPlan{
+  margin-top: 4rem;
+}
+
 .content__title {
   margin-bottom: 40px;
   font-size: 20px;
@@ -495,6 +500,11 @@ footer img{
   .navItem{
     margin: 0 2.4rem;
     border: none;
+  }
+
+  .multisteps-form__input{
+    font-size: 1.4rem;
+    padding: 7px 14px;
   }
 
   .navLink{
