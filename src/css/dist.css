@@ -49,9 +49,6 @@ a{
 p{
     font-size: 1.6rem;
 }
-header{
-  font-size: larger;
-}
 
 .container{
   width: 100%;
@@ -70,15 +67,119 @@ header{
 display: grid;
 }
 
-.navbar{
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   background-color: var(--other-blue);
+  padding: 10px 0px;
+
+}
+
+.transBack{
+  background-color: var(--transparentColor);
 }
 
 .nav{
-  background-color: var(--transparentColor);
-  padding: 1rem;
+  margin-top: 80px;
+
+  padding: 2rem 0;
+
+  width: 100%;
 }
 
+.navBar{
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuToggle{
+  color: #fff;
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2.5rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+
+.menuClose{
+  display: none;
+}
+
+.navList{
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--darkFontMain);
+  padding: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1250;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+}
+
+
+.navBar::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s;
+}
+
+.open .menuClose{
+  display: block;
+}
+.open .menuOpen{
+  display: none;
+}
+.open .navList{
+  transform: translateX(0);
+}
+.open .navBar::before{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.underline{
+  border-bottom: 2px solid rgba(255,255,255, 0.3) ;
+}
+
+#theme-change-button {
+background: transparent;
+border: none;
+}
+
+#theme-change-button ion-icon{
+font-size: 26px;
+}
+
+.navLink{
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  transition: color 0.5s;
+}
 
 .content {
   width: 95%;
@@ -87,6 +188,35 @@ display: grid;
   min-height: 70vh;
 }
 
+.midCard{
+  background-color: #007bff;
+  color: white;
+  width: 28rem;
+  height: 28rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.btn-lg{
+  background-color: var(--transparentColor);
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-family: fantasy;
+  color: rgb(0, 54, 75);
+}
+.btn-lg:hover{
+  background-color: var(--transparentColor);
+  border: none;
+  border: 1px solid var(--transparentColor);
+}
+.btn-lg:active{
+  background-color: var(--transparentColor);
+  border: 1px solid var(--transparentColor);
+}
+.btn-lg:focus{
+  background-color: var(--transparentColor);
+  border: 1px solid var(--transparentColor);
+}
 .content__title {
   margin-bottom: 40px;
   font-size: 20px;
@@ -322,4 +452,151 @@ footer img{
 
 .newsLetterBtn ion-icon{
   margin-top: 19px;
+}
+
+
+
+/*  */
+@media screen and (min-width: 900px){
+  section{
+     padding: 2rem;
+  }
+
+  .menuToggle{
+    display: none;
+  }
+
+  .navBar{
+    justify-content: space-between;
+  }
+
+  .navList{
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
+  }
+
+  .navItem{
+    margin: 0 2.4rem;
+    border: none;
+  }
+
+  .navLink{
+    font-size: 1.3rem;
+  }
+
+  .content{
+    font-size: 1.6rem;
+  }
+
+  .form-select{
+    font-size: 1.4rem;
+  }
+
+  .button-row > button{
+    font-size: 1.5rem;
+  }
+
+  .nav{
+    font-size: 1.8rem;
+  }
+
+  .col{
+    font-size: 1.4rem;
+  }
+
+  .active{
+    position: relative;
+  }
+  
+  .active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--fontColor);
+    left: 0;
+    bottom: -3px;
+  }
+
+  .subHeadline{
+    font-size: 10rem;
+  }
+
+  .firstLetter{
+    font-size: 12.2rem;
+  }
+
+  .headline{
+    font-size: 4.7rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .line{
+    max-width: 11.4rem;
+  }
+
+  .distInfo{
+    display: flex;
+    align-items: center;
+  }
+
+  .distInfo > div{
+    flex: 1;
+  }
+
+  .paddingRight{
+    padding-right: 7rem;
+  }
+
+  footer{
+    margin-bottom: -5rem;
+  }
+
+  .footerContent{
+    max-width: 77.5rem;
+    margin: auto;
+  }
+
+  .aboutFooter{
+    max-width: 51.3rem;
+    margin: 0 auto 5.4rem;
+  }
+
+
+
+}
+
+
+@media (max-width: 830px){
+   .pricing-plan {
+    margin: 2rem 0rem;
+  }
+
+.feature{
+   justify-content: space-evenly;
+}
+
+.feature .featureBox{
+   margin: 0 0 15px 0;  
+   width: 155px;       
+ }
+
+ .navList{
+  position: absolute;  
+}
+
+.background::after {
+
+  position: relative;
+ 
+}
+
+
 }
