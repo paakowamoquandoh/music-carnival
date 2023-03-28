@@ -353,6 +353,16 @@ font-size: 26px;
   transform: scale(1);
 }
 
+.imageCard{
+  color: #fff; 
+  width: 28rem; height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  padding: 8px;
+}
+
 /*  */
 footer{
   padding: 7.9rem 0;
