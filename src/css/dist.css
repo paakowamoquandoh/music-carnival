@@ -502,23 +502,23 @@ footer img{
   }
 
   .content{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .form-select{
-    font-size: 1.4rem;
-  }
-
-  .button-row > button{
     font-size: 1.5rem;
   }
 
+  .button-row > button{
+    font-size: 1.58rem;
+  }
+
   .nav{
-    font-size: 1.8rem;
+    font-size: 1.89rem;
   }
 
   .col{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .active{
