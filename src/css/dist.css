@@ -367,6 +367,13 @@ font-size: 26px;
 
 .form-check{
   margin: 5px 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form-check img{
+  width: 120px;
 }
 
 .form-check-input{
