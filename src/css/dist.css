@@ -185,7 +185,7 @@ font-size: 26px;
   width: 95%;
   margin: 100px 0px;
   font-size: larger;
-  min-height: 70vh;
+  min-height: 120vh;
 }
 
 .midCard{
@@ -356,6 +356,22 @@ font-size: 26px;
   transition-timing-function: linear;
   transition-delay: 0s;
   transform: scale(1);
+}
+
+.radioColumn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-check{
+  margin: 5px 12px;
+}
+
+.form-check-input{
+  width: 28px;
+  height: 28px;
 }
 
 .imageCard{
